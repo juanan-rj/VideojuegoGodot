@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://d33cvunlfvxeo"]
+[gd_scene load_steps=18 format=3 uid="uid://d33cvunlfvxeo"]
 
 [ext_resource type="TileSet" uid="uid://bh8gi240p28e5" path="res://Assets/Tech/primerMAPA.tres" id="1_glumg"]
+[ext_resource type="PackedScene" uid="uid://b7qwcr7a6a612" path="res://Escenas/player.tscn" id="2_xjead"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nyc4m"]
 size = Vector2(385, 75)
@@ -121,3 +122,5 @@ shape = SubResource("RectangleShape2D_2kol1")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(664, 312)
 shape = SubResource("RectangleShape2D_yt4pd")
+
+[node name="Player" parent="." instance=ExtResource("2_xjead")]
